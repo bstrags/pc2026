@@ -96,7 +96,7 @@ int main(int argc, char** argv)
             int         i;
             uint8_t     buf[ 5 ];
             memcpy(buf, "CTRL", 4);
-            buf[ 4 ] = (uint8_t)(value * 127.0 + 128.0);
+            buf[ 4 ] = (uint8_t)(value * 255.0);
             i = sendto(sock, (char*)buf, 5, 0, (struct sockaddr*)&sin, sizeof(sin));
             if (i != 5)
             {

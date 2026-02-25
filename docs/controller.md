@@ -16,9 +16,9 @@ During development, you'll use a local controller (e.g., XBox) plugged into your
    - Copy the `controller_sample` folder into your `sandpiper_sdk/samples` folder
 
 2. **Configure network forwarding**
-   - Modify the `-net` line in your `boot_emulator` script to forward a local UDP port:
+   - Modify the `-net` part of your `boot_emulator` script to forward a local UDP port:
    ```
-   -net user,hostfwd=tcp::2222-:22,hostfwd=udp::39811-:39811 \
+   -net user,hostfwd=tcp::2222-:22,hostfwd=udp::39811-:39811
    ```
 
 3. **Connect your controller**
