@@ -17,7 +17,7 @@ static struct SPPlatform* s_platform = NULL;
 
 int main( int argc, char** argv )
 {
-    if( controller_open( CONTROLLER_MODE_NETWORK ) != CONTROLLER_OK )
+    if( controller_open( CONTROLLER_MODE_AUTO ) != CONTROLLER_OK )
     {
         printf( "failed\n" );
         exit( -1 );
