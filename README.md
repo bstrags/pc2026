@@ -37,7 +37,9 @@ some of the SDK sample applications.
    - Plug an XBox controller (or other XInput-compatible controller) into your PC
 
 4. **Build and test the transmitter**
-   - Build and run the `controller_xmit` application under Visual Studio
+   - Build and run the `controller_xmit` application under Visual Studio, with a single
+     commandline parameter of **127.0.0.1** (this will send controller packets to your local machine,
+     and they will be forwarded to the emulator).
    - This should detect your controller and display the LEFT TRIGGER axis value
 
 5. **Deploy to the emulator**
