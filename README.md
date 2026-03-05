@@ -1,6 +1,9 @@
 
 # Controller Setup Guide
 
+The controller we'll be using is a single-axis input with no buttons. It should be thought of
+as akin to the trigger on a game controller, rather than a directional axis - the range of values returned will be 0..255, which 0 being the "at-rest" value, rather than a left/right or up/down axis where the "at-rest" value would be a mid-point.
+
 During development, you'll use a local XInput-compatible controller (e.g., XBox) plugged into your PC that sends data in UDP packets to either:
    -  a local instance of QEMU running the emulator
    -  remote test hardware that has been set up for shared dev access.
